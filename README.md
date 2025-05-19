@@ -30,11 +30,7 @@ El objetivo de este proyecto fue simular el inicio de sesión en un sitio web de
 3. Ejecuta el test:
 	```bash
 	npx playwright test
-
-4. Para ver la traza del test:
-	```bash
-	npx playwright show-trace trace.zip
-
+ 
 ## ¿Qué se testea?
 
 - Que el sitio cargue correctamente.
@@ -44,10 +40,6 @@ El objetivo de este proyecto fue simular el inicio de sesión en un sitio web de
 ## El sitio web que usé para testear:
 
 https://practicetestautomation.com/practice-test-login/
-
-## Trazas
-
-En el archivo **trace.zip** se pueden ver las trazas que se generan luego de ejecutar el test, incluye todos los pasos que siguió.
 
 ## Fin
 
