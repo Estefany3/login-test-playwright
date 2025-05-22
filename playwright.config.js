@@ -1,8 +1,14 @@
-const { defineConfig } = require('@playwright/test');
+const { defineConfig, devices } = require('@playwright/test');
 
 module.exports = defineConfig({
-  use: {
-    trace: 'on', 
-    headless: false 
-  },
+  projects: [
+    {
+      name: 'chromium',
+      use: {
+        browserName: 'chromium',
+        headless: false,
+        trace: 'on'
+      },
+    },
+  ],
 });

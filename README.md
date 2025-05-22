@@ -1,6 +1,6 @@
 # Automatización de Login con Playwright
 
-Este proyecto es una automatización de prueba funcional de un formulario de login, utilizando **Playwright**. Forma parte de mi portafolio de aprendizaje sobre QA Automation.
+Este proyecto es una automatización de prueba funcional de un formulario de login, utilizando Playwright. Forma parte de mi portafolio de aprendizaje sobre QA Automation.
 
 El objetivo de este proyecto fue simular el inicio de sesión en un sitio web de práctica, verificando que el usuario pueda acceder correctamente usando credenciales válidas.
 
@@ -27,15 +27,34 @@ El objetivo de este proyecto fue simular el inicio de sesión en un sitio web de
 	```bash
 	npm install
 
-3. Ejecuta el test:
+3. Instalar solo para Chrome:
+	```bash
+	npx playwright install chromium
+
+4. Ejecuta el test:
 	```bash
 	npx playwright test
  
 ## ¿Qué se testea?
 
-- Que el sitio cargue correctamente.
-- Que se ingresen correctamente usuario y contraseña.
-- Que se muestre un mensaje de login exitoso o que redirija a la página esperada.
+- Que el sitio de login cargue correctamente.
+- Que se pueda realizar un inicio de sesión exitoso con credenciales válidas:
+  - Usuario: `student`
+  - Contraseña: `Password123`
+  - Se verifica:
+    - Redirección a la URL correcta.
+    - Mensaje de éxito visible en la pantalla.
+    - Botón de "Log out" disponible.
+- Que el login falle con un nombre de usuario inválido:
+  - Usuario: `incorrectUser`
+  - Contraseña: `Password123`
+  - Se verifica:
+    - Que se muestre el mensaje de error correcto: "Your username is invalid!"
+- Que el login falle con una contraseña inválida:
+  - Usuario: `student`
+  - Contraseña: `incorrectPassword`
+  - Se verifica:
+    - Que se muestre el mensaje de error correcto: "Your password is invalid!"
 
 ## El sitio web que usé para testear:
 
