@@ -7,7 +7,7 @@ module.exports = defineConfig({
       use: {
         browserName: 'chromium',
         headless: false,
-        trace: 'on'
+        trace: 'on',
       },
     },
   ],

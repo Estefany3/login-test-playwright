@@ -6,6 +6,10 @@ El objetivo de este proyecto fue simular el inicio de sesión en un sitio web de
 
 ---
 
+## Ejecución de los 3 casos de prueba
+
+![Ejecución de login](./test.gif)
+
 ## Tecnologías utilizadas
 
 - [Playwright](https://playwright.dev/)
