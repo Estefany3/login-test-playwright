@@ -8,7 +8,7 @@ El objetivo de este proyecto fue simular el inicio de sesión en un sitio web de
 
 ## Ejecución de los 3 casos de prueba
 
-![Ejecución de login](https://s8.ezgif.com/tmp/ezgif-80cbc80527413a.gif)
+![Ejecución de login](https://raw.githubusercontent.com/Estefany3/login-test-playwright/refs/heads/main/demo/test.gif)
 
 ## Tecnologías utilizadas
 
